@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/layout.css" rel="stylesheet" type="text/css">
+    <link href="style/setup.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<!-- HEAD -->
+
+<body>
+
+
+    <header class="m">
+        <div>
+            <h1>Cristian Steiciuc</h1>
+        </div>
+        <h2>portfolio</h2>
+
+    </header>
+
+    <!-- MENU -->
+
+    <main class="main-section centered-h">
+        <div class="row space-evenly">
+            <div class="f-1 b-white centered-h2 p m clickable"  onclick="openModal(0)">
+                <h3>About</h3>
+            </div>
+
+            <div class="f-1 b-white centered-h2 p m clickable"  onclick="openModal(1)">
+                <h3>Work</h3>
+            </div>
+
+            <div class="f-1 b-white centered-h2 p m clickable" onclick="openModal(2)">
+                <h3>Education</h3>
+            </div>
+        </div>
+
+
+        <div class="row space-evenly centered-v">
+            <div class="f-1 b-white centered-h2 p m clickable" onclick="openModal(3)">
+                <h3>Project overview</h3>
+            </div>
+
+            <div class="f-1 b-white centered-h2 p m clickable" onclick="openModal(4)">
+                <h3>Project details</h3>
+            </div>
+
+            <div class="f-1 b-white centered-h2 p m clickable" onclick="openModal(5)">
+                <h3>Contact</h3>
+            </div>
+        </div>
+
+        <!-- Modals -->
+
+        <div class="modal" id="modal0" onclick="closeModal(0)">
+            <div class="mod-content">
+            <span class="close">&times;</span>
+            <p>About</p>
+        </div>
+
+        </div>
+        <div class="modal" id="modal1" onclick="closeModal(1)">
+            <div class="mod-content">
+            <span class="close">&times;</span>
+            <p>Work</p>
+        </div>
+        </div>
+
+        <div class="modal" id="modal2" onclick="closeModal(2)">
+            <div class="mod-content">
+            <span class="close">&times;</span>
+            <p>Education</p>
+        </div>
+        </div>
+
+        <div class="modal" id="modal3" onclick="closeModal(3)">
+            <div class="mod-content">
+            <span class="close">&times;</span>
+            <p>Project overview</p>
+        </div>
+        </div>
+
+        <div class="modal" id="modal4" onclick="closeModal(4)">
+            <div class="mod-content">
+            <span class="close">&times;</span>
+            <p>Project details</p>
+        </div>
+        </div>
+
+        <div class="modal" id="modal5" onclick="closeModal(5)">
+            <div class="mod-content">
+            <span class="close">&times;</span>
+            <p>Contact</p>
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+/* If it's vertical, you set justify-content.
+ If it's horizontal, you set align-items. */
+
+/* background grid */
+
+/* .square {
+width: 60px;
+  height: 60px;
+  position: absoluteS;
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  background-color: white;
+  z-index: 999;
+} */
+
+/* sec */
+.main-section {
+  height: calc(100vh - 180px);
+  display:flex;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  height: auto;
+  display:flex;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* __________LAYOUT__________ */
+/* __________ROWS__________ */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.centered-h {
+  justify-content: center;
+}
+
+.centered-v {
+  align-items: center;
+}
+
+.centered-h2 {
+  align-self: center;
+  text-align: center;
+}
+
+/* __________COLUMNS__________ */
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-1 {
+  flex:1;
+}
+
+.f-2 {
+  flex:2;
+}
+
+.f-3 {
+  flex:3;
+}
+
+.f-4 {
+  flex:4;
+}
+
+/* __________HEIGHT__________ */
+.h-1 {
+  height:15em;
+}
+
+.h-2 {
+  height:20em;
+}
+
+.h-3 {
+  height: 30em;
+}
+
+/* __________WIDTH__________ */
+.half-width {
+  width:50%;
+}
+
+@media all and (max-width: 500px) { 
+  .row {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .col {
+    margin:0px;
+    padding:0em;
+    flex: 0 0 auto;
+    align-self: auto;
+  }
+  .centered-sm {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fs-1 {
+    font-size:1em !important;
+  }
+
+  p {
+    font-size:14px;
+  }
+}
